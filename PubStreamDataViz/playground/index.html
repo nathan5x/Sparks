@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IA 1: Data Visualization </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Data Visualization</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#a-level">A-Level</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#b-level">B-Level</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#c-level">C-Level</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Visualizing Public Data Stream</h1>
+                <hr>
+                <p>Visualizing public data stream from different sources using HighCharts, jQuery, and RapheâlJS.</p>
+                <a href="#c-level" class="btn btn-primary btn-xl page-scroll">Explore</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="c-level" class="work-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">C-Level Work</h2>
+                    <hr class="primary">
+                    <h5> Data Source: <a href="https://data.sparkfun.com/streams/dZ4EVmE8yGCRGx5XRX1W">Wimp Weather Station </a> | Polling Time: 5000 ms </h5>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid chart-area">
+            <div class="row">
+                <div id="cLevelChartContainer"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="b-level" class="work-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">B-Level Work</h2>
+                    <hr class="primary">
+                    <h5> Data Source: <a href="https://data.sparkfun.com/streams/dZ4EVmE8yGCRGx5XRX1W">Wimp Weather Station </a> | Polling Time: 5000 ms </h5>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid chart-area">
+            <div class="row">
+                <div class="col-lg-8">
+                  <div id="bLevelChartContainer"></div>
+                </div>
+                <div class="col-lg-4 side-panel">
+                  <div class="row">
+                    <div class="col-lg-12 temperature-counter">
+                      <div class="row">
+                        <div class="col-lg-6 highest text-center">
+                            <h2> 78&#176;C </h2>
+                            <h6> Highest <br/>Temperature </h6>
+                        </div>
+
+                        <div class="col-lg-6 clock">
+                          <div id="bLevelTempClock"> </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 humidity-counter">
+                      <div class="row">
+                        <div class="col-lg-6 highest text-center">
+                            <h2> 80 % </h2>
+                            <h6> Highest <br/>Humidity </h6>
+                        </div>
+
+                        <div class="col-lg-6 clock">
+                          <div id="bLevelHumidClock"> </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="a-level" class="work-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">A-Level Work</h2>
+                    <hr class="primary">
+                    <h5> Data Source:  </h5>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid chart-area">
+            <div class="row">
+
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+
+    <script type="text/javascript" src="js/rapheal.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
